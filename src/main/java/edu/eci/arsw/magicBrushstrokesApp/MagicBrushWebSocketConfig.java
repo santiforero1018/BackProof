@@ -1,4 +1,4 @@
-package edu.eci.arsw.magicBrushstrokes.controller;
+package edu.eci.arsw.magicBrushstrokesApp;
 
 
 import org.springframework.context.annotation.Configuration;
@@ -19,7 +19,7 @@ public class MagicBrushWebSocketConfig implements WebSocketMessageBrokerConfigur
 
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
-        registry.addEndpoint("/stompendpoint").setAllowedOrigins("https://magicbrushstrokeswebappfront.azurewebsites.net", "http://magicbrushstrokeswebappfront.azurewebsites.net").withSockJS(); // Cambiar al momento de subir a azure
+        registry.addEndpoint("/stompendpoint").setAllowedOrigins("https://mbfrontproof.azurewebsites.net", "http://mbfrontproof.azurewebsites.net").withSockJS(); // Cambiar al momento de subir a azure
         
     }
 }
